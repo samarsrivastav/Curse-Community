@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
- 
- function FooterComponent() {
+import { Link } from "react-router-dom";
+function FooterComponent() {
   return (
     <footer className="w-full bg-black opacity-90 p-8">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-black text-center md:justify-between">
@@ -8,42 +8,42 @@ import { Typography } from "@material-tailwind/react";
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
-              as="a"
-              href="#"
               color="white"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
-              About Us
+              <Link to='/about'>
+                About Us
+              </Link>
             </Typography>
           </li>
           <li>
             <Typography
-              as="a"
-              href="#"
               color="white"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
-              License
+              <Link to='/learning'>
+                Learning
+              </Link>
             </Typography>
           </li>
           <li>
             <Typography
-              as="a"
-              href="#"
               color="white"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
-              Contribute
+              <Link to='/blog'>
+                Blog
+              </Link>
             </Typography>
           </li>
           <li>
             <Typography
-              as="a"
-              href="#"
               color="white"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+              className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
-              Contact Us
+              <Link to='/contact'>
+                Contact Us
+              </Link>
             </Typography>
           </li>
         </ul>

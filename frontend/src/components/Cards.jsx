@@ -9,8 +9,8 @@ import {
    
  function Cards(props) {
     return (
-      <Card className="w-60">
-        <CardHeader shadow={false} floated={false} className="h-60 flex items-center justify-center">
+      <Card className="w-60 shadow-xl bg-gray-400 bg-clip-padding transform transition duration-100 hover:scale-125 backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
+        <CardHeader shadow={false} floated={false} className="h-48 flex items-center justify-center backdrop-filter backdrop-blur-sm bg-opacity-10">
           <img
             src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
             alt="card-image"

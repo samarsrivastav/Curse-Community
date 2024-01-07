@@ -8,6 +8,7 @@ import {
   Card,
   Collapse,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
  
 function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -27,9 +28,9 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+       <Link to="/" className="flex items-center">
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -37,9 +38,9 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/blog" className="flex items-center">
           Learning
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -47,9 +48,9 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/blog" className="flex items-center">
           Blogs
-        </a>
+        </Link>
       </Typography>
       
     </ul>
@@ -58,15 +59,15 @@ function StickyNavbar() {
   return (
     <div className="fixed flex justify-center items-center w-full h-20 bg-gray-200 backdrop-blur-sm z-10 shadow-md bg-opacity-40 hover:bg-opacity-50 bg-clip-padding'">
       
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4  lg:px-8 lg:py-4 bg-gray-200 backdrop-blur-sm z-10 shadow-md bg-opacity-10 hover:bg-opacity-15 bg-clip-padding'">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4  lg:px-8 lg:py-4 bg-gray-200 backdrop-blur-sm shadow-md bg-opacity-10 hover:bg-opacity-15 bg-clip-padding'">
 
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
-            as="a"
-            href="#"
+            as="li"
+            href="/"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
-            Material Tailwind
+            BitByte
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>

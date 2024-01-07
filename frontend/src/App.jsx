@@ -1,21 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import StickyNavbar from './components/Navbar'
-import CarouselComponent from './components/Corousel'
 import FooterComponent from './components/footer'
-import CardContainer from './components/CardContainer'
-
+import Home from './pages/Home'
+import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Router>
       <StickyNavbar/>
-      <CarouselComponent/>
-      <CardContainer/>
+          <Routes>
+            <Route path='/' Component={Home}/>
+          </Routes>
       <FooterComponent/>
+      </Router>
     </>
   )
 }
