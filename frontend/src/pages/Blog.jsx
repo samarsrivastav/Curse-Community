@@ -1,9 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { BlogCard } from '../components/BlogCard';
+import data from '../assets/Blog.json';
 
 function Blog() {
-  return (
-    <div>Blog</div>
-  )
+    const dataArray = Object.values(data);
+
+
+    return (
+        <div>
+            <div className="container p-[100px]">
+                {dataArray.map((listItem, index) => (
+                    <BlogCard
+                        key={index}
+                        img={listItem.img}
+                        url={listItem.url}
+                        desc={listItem.desc}
+                        title={listItem.title}
+                    />
+                ))}
+            </div>
+        </div>
+    );
 }
 
-export default Blog
+export default Blog;
