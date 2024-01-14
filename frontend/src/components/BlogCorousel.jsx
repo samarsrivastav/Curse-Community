@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from '../assets/Gallary1.jpg'
-import img2 from '../assets/Gallary2.jpg'
-import img3 from '../assets/Gallary3.jpg'
-import img4 from '../assets/Gallary4.jpg'
-import img5 from '../assets/Gallary5.jpg'
+import img1 from '../assets/images/blog/Gallary1.jpg'
+import img2 from '../assets/images/blog/Gallary2.jpg'
+import img3 from '../assets/images/blog/Gallary3.jpg'
+import img4 from '../assets/images/blog/Gallary4.jpg'
+import img5 from '../assets/images/blog/Gallary5.jpg'
 export function BlogCorousel() {
     const data = [
         {

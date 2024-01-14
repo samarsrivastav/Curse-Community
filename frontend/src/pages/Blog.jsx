@@ -1,6 +1,6 @@
 import React from 'react';
 import { BlogCard } from '../components/BlogCard';
-import data from '../assets/Blog.json';
+import data from '../assets/data/Blog.json';
 
 function Blog() {
     const dataArray = Object.values(data);

@@ -1,6 +1,6 @@
 import { Carousel } from "@material-tailwind/react";
-import img1 from '../assets/c-1.png'
-import img2 from '../assets/c-2.png'
+import img1 from '../assets/images/corousel/c-1.png'
+import img2 from '../assets/images/corousel/c-2.png'
  function CarouselComponent() {
   return (
     <Carousel

@@ -1,7 +1,7 @@
 import React from 'react'
-import i1 from '../assets/Icon-1.png'
-import i2 from '../assets/Icon-2.png'
-import i from '../assets/Icon.png'
+import i1 from '../assets/images/icons/Icon-1.png'
+import i2 from '../assets/images/icons/Icon-2.png'
+import i from '../assets/images/icons/Icon.png'
 function AddBanner() {
     return (
         <div>
