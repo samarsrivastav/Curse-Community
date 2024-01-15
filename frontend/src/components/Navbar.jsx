@@ -38,7 +38,7 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/blog" className="flex items-center">
+        <Link to="/learning" className="flex items-center">
           Learning
         </Link>
       </Typography>
