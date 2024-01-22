@@ -1,0 +1,314 @@
+{
+  "courses": {
+    "web": [
+      {
+        "course_name": "Introduction to Web Development",
+        "youtuber_name": "CodeMaster",
+        "youtube_link": "https://www.youtube.com/c/CodeMasterWebDev",
+        "rating": 4.7
+      },
+      {
+        "course_name": "JavaScript Mastery",
+        "youtuber_name": "JSPro",
+        "youtube_link": "https://www.youtube.com/c/JSPro",
+        "rating": 4.9
+      },
+      {
+        "course_name": "React.js Fundamentals",
+        "youtuber_name": "ReactMaster",
+        "youtube_link": "https://www.youtube.com/c/ReactMaster",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Node.js for Beginners",
+        "youtuber_name": "NodeMaster",
+        "youtube_link": "https://www.youtube.com/c/NodeMaster",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Full Stack Development with MERN",
+        "youtuber_name": "MERNStackPro",
+        "youtube_link": "https://www.youtube.com/c/MERNStackPro",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Vue.js Crash Course",
+        "youtuber_name": "VueMaster",
+        "youtube_link": "https://www.youtube.com/c/VueMaster",
+        "rating": 4.6
+      },
+      {
+        "course_name": "Responsive Web Design",
+        "youtuber_name": "ResponsiveDev",
+        "youtube_link": "https://www.youtube.com/c/ResponsiveDev",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Bootstrap 5 Essentials",
+        "youtuber_name": "BootstrapPro",
+        "youtube_link": "https://www.youtube.com/c/BootstrapPro",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Django Web Development",
+        "youtuber_name": "DjangoMaster",
+        "youtube_link": "https://www.youtube.com/c/DjangoMaster",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Angular Framework Basics",
+        "youtuber_name": "AngularGuru",
+        "youtube_link": "https://www.youtube.com/c/AngularGuru",
+        "rating": 4.6
+      }
+    ],
+    "devops": [
+      {
+        "course_name": "DevOps Fundamentals",
+        "youtuber_name": "DevOpsMaster",
+        "youtube_link": "https://www.youtube.com/c/DevOpsMaster",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Docker Essentials",
+        "youtuber_name": "DockerPro",
+        "youtube_link": "https://www.youtube.com/c/DockerPro",
+        "rating": 4.6
+      },
+      {
+        "course_name": "Continuous Integration with Jenkins",
+        "youtuber_name": "JenkinsExpert",
+        "youtube_link": "https://www.youtube.com/c/JenkinsExpert",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Kubernetes Basics",
+        "youtuber_name": "KubernetesGuru",
+        "youtube_link": "https://www.youtube.com/c/KubernetesGuru",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Ansible for DevOps",
+        "youtuber_name": "AnsiblePro",
+        "youtube_link": "https://www.youtube.com/c/AnsiblePro",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Git and GitHub Tutorial",
+        "youtuber_name": "GitMaster",
+        "youtube_link": "https://www.youtube.com/c/GitMaster",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Jenkins Pipeline Automation",
+        "youtuber_name": "PipelineExpert",
+        "youtube_link": "https://www.youtube.com/c/PipelineExpert",
+        "rating": 4.7
+      },
+      {
+        "course_name": "DevOps Security Best Practices",
+        "youtuber_name": "DevSecOpsPro",
+        "youtube_link": "https://www.youtube.com/c/DevSecOpsPro",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Infrastructure as Code (IaC) with Terraform",
+        "youtuber_name": "TerraformMaster",
+        "youtube_link": "https://www.youtube.com/c/TerraformMaster",
+        "rating": 4.6
+      },
+      {
+        "course_name": "AWS DevOps Essentials",
+        "youtuber_name": "AWSDevOpsPro",
+        "youtube_link": "https://www.youtube.com/c/AWSDevOpsPro",
+        "rating": 4.7
+      }
+    ],
+    "machine_learning": [
+      {
+        "course_name": "Machine Learning Fundamentals",
+        "youtuber_name": "MLMaster",
+        "youtube_link": "https://www.youtube.com/c/MLMaster",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Deep Learning with PyTorch",
+        "youtuber_name": "PyTorchGuru",
+        "youtube_link": "https://www.youtube.com/c/PyTorchGuru",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Natural Language Processing (NLP)",
+        "youtuber_name": "NLPMaster",
+        "youtube_link": "https://www.youtube.com/c/NLPMaster",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Reinforcement Learning Basics",
+        "youtuber_name": "RLMaster",
+        "youtube_link": "https://www.youtube.com/c/RLMaster",
+        "rating": 4.6
+      },
+      {
+        "course_name": "Computer Vision with OpenCV",
+        "youtuber_name": "OpenCVPro",
+        "youtube_link": "https://www.youtube.com/c/OpenCVPro",
+        "rating": 4.8
+      },
+      {
+        "course_name": "TensorFlow for Beginners",
+        "youtuber_name": "TFBeginner",
+        "youtube_link": "https://www.youtube.com/c/TFBeginner",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Applied Machine Learning Projects",
+        "youtuber_name": "MLProjectsPro",
+        "youtube_link": "https://www.youtube.com/c/MLProjectsPro",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Generative Adversarial Networks (GANs)",
+        "youtuber_name": "GANsExpert",
+        "youtube_link": "https://www.youtube.com/c/GANsExpert",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Machine Learning in Healthcare",
+        "youtuber_name": "HealthcareML",
+        "youtube_link": "https://www.youtube.com/c/HealthcareML",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Time Series Analysis with Machine Learning",
+        "youtuber_name": "TimeSeriesML",
+        "youtube_link": "https://www.youtube.com/c/TimeSeriesML",
+        "rating": 4.7
+      }
+    ],
+    "android": [
+      {
+        "course_name": "Android App Development for Beginners",
+        "youtuber_name": "AndroidMaster",
+        "youtube_link": "https://www.youtube.com/c/AndroidMaster",
+        "rating": 4.6
+      },
+      {
+        "course_name": "Kotlin Programming for Android",
+        "youtuber_name": "KotlinDev",
+        "youtube_link": "https://www.youtube.com/c/KotlinDev",
+        "rating": 4.8
+      },
+      {
+        "course_name": "React Native Mobile App Development",
+        "youtuber_name": "ReactNativePro",
+        "youtube_link": "https://www.youtube.com/c/ReactNativePro",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Firebase for Android Developers",
+        "youtuber_name": "FirebaseDev",
+        "youtube_link": "https://www.youtube.com/c/FirebaseDev",
+        "rating": 4.5
+      },
+      {
+        "course_name": "Flutter UI Design Tutorial",
+        "youtuber_name": "FlutterDesignMaster",
+        "youtube_link": "https://www.youtube.com/c/FlutterDesignMaster",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Android Jetpack Architecture Components",
+        "youtuber_name": "JetpackPro",
+        "youtube_link": "https://www.youtube.com/c/JetpackPro",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Android Studio Tips and Tricks",
+        "youtuber_name": "StudioPro",
+        "youtube_link": "https://www.youtube.com/c/StudioPro",
+        "rating": 4.8
+      },
+      {
+        "course_name": "RxJava for Android Developers",
+        "youtuber_name": "RxJavaDev",
+        "youtube_link": "https://www.youtube.com/c/RxJavaDev",
+        "rating": 4.6
+      },
+      {
+        "course_name": "Room Database in Android",
+        "youtuber_name": "RoomMaster",
+        "youtube_link": "https://www.youtube.com/c/RoomMaster",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Android UI/UX Design Principles",
+        "youtuber_name": "UIDesignPro",
+        "youtube_link": "https://www.youtube.com/c/UIDesignPro",
+        "rating": 4.9
+      }
+    ],
+    "dsa": [
+      {
+        "course_name": "Algorithmic Problem Solving in Python",
+        "youtuber_name": "AlgoMaster",
+        "youtube_link": "https://www.youtube.com/c/AlgoMaster",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Data Structures in Python",
+        "youtuber_name": "DSPro",
+        "youtube_link": "https://www.youtube.com/c/DSPro",
+        "rating": 4.5
+      },
+      {
+        "course_name": "Dynamic Programming Explained",
+        "youtuber_name": "DynamicPro",
+        "youtube_link": "https://www.youtube.com/c/DynamicPro",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Graph Algorithms in C++",
+        "youtuber_name": "GraphMaster",
+        "youtube_link": "https://www.youtube.com/c/GraphMaster",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Hashing Techniques for DSA",
+        "youtuber_name": "HashPro",
+        "youtube_link": "https://www.youtube.com/c/HashPro",
+        "rating": 4.6
+      },
+      {
+        "course_name": "Binary Search Explained",
+        "youtuber_name": "BinarySearchPro",
+        "youtube_link": "https://www.youtube.com/c/BinarySearchPro",
+        "rating": 4.8
+      },
+      {
+        "course_name": "Tree Data Structure in Java",
+        "youtuber_name": "TreeJavaMaster",
+        "youtube_link": "https://www.youtube.com/c/TreeJavaMaster",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Sorting Algorithms Overview",
+        "youtuber_name": "SortingPro",
+        "youtube_link": "https://www.youtube.com/c/SortingPro",
+        "rating": 4.9
+      },
+      {
+        "course_name": "Greedy Algorithms Tutorial",
+        "youtuber_name": "GreedyMaster",
+        "youtube_link": "https://www.youtube.com/c/GreedyMaster",
+        "rating": 4.7
+      },
+      {
+        "course_name": "Backtracking Algorithms in Python",
+        "youtuber_name": "BacktrackPython",
+        "youtube_link": "https://www.youtube.com/c/BacktrackPython",
+        "rating": 4.8
+      }
+    ]
+  }
+}
