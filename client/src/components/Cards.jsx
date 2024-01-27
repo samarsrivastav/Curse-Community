@@ -42,9 +42,9 @@ const Cards = () => {
     <div className="flex flex-wrap justify-evenly">
       {data.map((course, id) => (
         <div key={id}>
-          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 h-[550px]">
-            <div className="p-6">
-              <img src={course.image} className="h-48 w-56"/>
+          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 h-[550px] overflow-hidden drop-shadow-2xl bg-gray-400 bg-clip-padding transform transition duration-100 hover:scale-105 backdrop-filter  bg-opacity-10 border border-gray-100">
+            <div className="p-6 text-center">
+              <img src={course.image} className="h-48 w-56 my-1 mx-auto"/>
               <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                 {course.Title}
               </h5>

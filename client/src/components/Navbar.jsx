@@ -21,7 +21,7 @@ function StickyNavbar() {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <Typography
         as="li"
         variant="small"
@@ -59,7 +59,7 @@ function StickyNavbar() {
   return (
     <div className="fixed top-0 flex justify-center items-center w-full h-20 bg-gray-200 backdrop-blur-sm z-10 shadow-md bg-opacity-40 hover:bg-opacity-50 bg-clip-padding ">
       
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4  lg:px-8 lg:py-4 bg-gray-200 backdrop-blur-sm shadow-md bg-opacity-10 hover:bg-opacity-15 bg-clip-padding'">
+      <Navbar className="lg:stiky fixed top-0 z-10 h-max max-w-full rounded-none px-4  lg:px-8 lg:py-4 bg-gray-200 backdrop-blur-sm shadow-md bg-opacity-10 hover:bg-opacity-15 bg-clip-padding'">
 
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
