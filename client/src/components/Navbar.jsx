@@ -5,7 +5,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Card,
   Collapse,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
@@ -25,7 +24,6 @@ function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
        <Link to="/" className="flex items-center">
@@ -35,7 +33,6 @@ function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
         <Link to="/learning" className="flex items-center">
@@ -45,7 +42,6 @@ function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
         className="p-1 font-normal"
       >
         <Link to="/blog" className="flex items-center">
@@ -57,23 +53,25 @@ function StickyNavbar() {
   );
  
   return (
-    <div className="fixed top-0 flex justify-center items-center w-full h-20 bg-gray-200 backdrop-blur-sm z-10 shadow-md bg-opacity-40 hover:bg-opacity-50 bg-clip-padding ">
+    <div className="" >
       
-      <Navbar className="lg:stiky fixed top-0 z-10 h-max max-w-full rounded-none px-4  lg:px-8 lg:py-4 bg-gray-200 backdrop-blur-sm shadow-md bg-opacity-10 hover:bg-opacity-15 bg-clip-padding'">
+      <Navbar className="lg:stiky fixed top-0 z-10 h-max max-w-full rounded-none px-4  lg:px-8 lg:py-4 backdrop-blur-sm shadow-md bg-opacity-50  bg-clip-padding' bg-[#06283D]">
 
-        <div className="flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="li" 
-            href="/"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
-          >
-            BitByte
-          </Typography>
+        <div className="flex items-center justify-between ">
+          <Link to='/'>
+          <Button
+                variant="black"
+                size="sm"
+                className="hidden lg:inline-block"
+                
+              >
+                <span>BitByte</span>
+          </Button>
+          </Link>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
-            <div className="flex items-center gap-x-1">
+            {/* <div className="flex items-center gap-x-1">
               <Button
-                variant="text"
                 size="sm"
                 className="hidden lg:inline-block"
               >
@@ -87,7 +85,7 @@ function StickyNavbar() {
               >
                 <span>Sign in</span>
               </Button>
-            </div>
+            </div> */}
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -129,14 +127,14 @@ function StickyNavbar() {
         </div>
         <Collapse open={openNav}>
           {navList}
-          <div className="flex items-center gap-x-1">
+          {/* <div className="flex items-center gap-x-1">
             <Button fullWidth variant="text" size="sm" className="">
               <span>Log In</span>
             </Button>
             <Button fullWidth variant="gradient" size="sm" className="">
               <span>Sign in</span>
             </Button>
-          </div>
+          </div> */}
         </Collapse>
       </Navbar>
     </div>

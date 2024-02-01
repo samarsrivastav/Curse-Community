@@ -42,20 +42,20 @@ const Cards = () => {
     <div className="flex flex-wrap justify-evenly">
       {data.map((course, id) => (
         <div key={id}>
-          <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 h-[550px] overflow-hidden drop-shadow-2xl bg-gray-400 bg-clip-padding transform transition duration-100 hover:scale-105 backdrop-filter  bg-opacity-10 border border-gray-100">
+          <div className="relative flex flex-col mt-6 shadow-md bg-clip-border rounded-xl w-96 h-[550px] overflow-hidden drop-shadow-2xl  transform transition duration-100 hover:scale-105  border border-gray-100 bg-[#031a27]">
             <div className="p-6 text-center">
               <img src={course.image} className="h-48 w-56 my-1 mx-auto"/>
-              <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              <h5 className="block mb-2 font-sans text-xl  font-semibold leading-snug tracking-normal text-[#DFF6FF]">
                 {course.Title}
               </h5>
             </div>
-            <p className="block font-sans text-base antialiased font-light p-4">
+            <p className="block font-sans text-[#DFF6FF] font-light p-4">
               {course.Discription}
             </p>
             <div className="h-full flex justify-center items-end pb-5">
               <Link to={course.link} className="inline-block">
                 <button
-                  className="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
+                  className="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-[#DFF6FF] uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
                   type="button"
                 >
                   Learn More

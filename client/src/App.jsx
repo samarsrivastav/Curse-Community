@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import StickyNavbar from './components/Navbar'
 import FooterComponent from './components/Footer'
@@ -7,11 +6,12 @@ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import Blog from './pages/Blog'
 import Learning from './pages/Learning'
 import Courses from './pages/Courses'
+
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
+    <div >
       <Router>
         <StickyNavbar/>
           <Routes>
@@ -25,7 +25,7 @@ function App() {
           </Routes>
       <FooterComponent/>
       </Router>
-    </>
+    </div>
   )
 }
 
