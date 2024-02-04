@@ -10,28 +10,28 @@ const Cards = () => {
       Discription:
         "Are you ready to dive into the exciting world of web development? Click on this card to unlock a treasure trove of free, high-quality web development courses that will empower you to build, design, and innovate on the web.",
       image: `${web}`,
-      link:"/web"
+      link: "/web"
     },
     {
       Title: "Craft Your App Development Mastery",
       Discription:
         "Ready to turn your app ideas into reality? Click on this card to access a curated collection of free app development courses that will empower you to create innovative and impactful mobile applications.",
       image: `${android}`,
-      link:"/android"
+      link: "/android"
     },
     {
       Title: "Explore the Boundless World of Machine Learning",
       Discription:
         "Step into the future of technology by clicking on this card. Uncover an array of free machine learning courses that will equip you with the skills to analyze data, create intelligent systems, and make a profound impact in the world of artificial intelligence.",
       image: `${web}`,
-      link:"/machine-learning"
+      link: "/machine-learning"
     },
     {
       Title: "Master the Art of Problem-Solving",
       Discription:
         "Embark on a journey of logical prowess by clicking on this card. Explore a comprehensive collection of free courses on Data Structures and Algorithms (DSA) that will sharpen your problem-solving skills and empower you to tackle coding challenges with confidence.",
       image: `${dsa}`,
-      link:"/dsa"
+      link: "/dsa"
     },
   ];
 
@@ -39,44 +39,30 @@ const Cards = () => {
   // console.log(data.courses[category])
 
   return (
-    <div className="flex flex-wrap justify-evenly">
+    <div className="flex flex-wrap justify-evenly py-5">
+
       {data.map((course, id) => (
         <div key={id}>
-          <div className="relative flex flex-col mt-6 shadow-md bg-clip-border rounded-xl w-96 h-[550px] overflow-hidden drop-shadow-2xl  transform transition duration-100 hover:scale-105  border border-gray-100 bg-[#031a27]">
-            <div className="p-6 text-center">
-              <img src={course.image} className="h-48 w-56 my-1 mx-auto"/>
-              <h5 className="block mb-2 font-sans text-xl  font-semibold leading-snug tracking-normal text-[#DFF6FF]">
-                {course.Title}
-              </h5>
+          <Link to={course.link}>
+            <div className="cursor-pointer group perspective relative flex flex-col my-10 bg-clip-border rounded-xl w-96 h-[350px]  border border-gray-100 bg-[#87c1e2]">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
+                <div className="absolute backface-hidden w-full h-full">
+                  <div className="p-6 text-center">
+                    <img src={course.image} className="h-48 w-56 my-1 mx-auto" />
+                    <h5 className="block mb-2 font-sans text-xl  font-semibold leading-snug tracking-normal text-[#031a27]">
+                      {course.Title}
+                    </h5>
+                  </div>
+                </div>
+                <div className="absolute my-rotate-y-180 backface-hidden w-full h-full overflow-hidden" >
+                  <p className="block font-sans text-[#031a27] text-xl font-light p-10 text-justify">
+                    {course.Discription}
+                  </p>
+                </div>
+              </div>
             </div>
-            <p className="block font-sans text-[#DFF6FF] font-light p-4">
-              {course.Discription}
-            </p>
-            <div className="h-full flex justify-center items-end pb-5">
-              <Link to={course.link} className="inline-block">
-                <button
-                  className="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-[#DFF6FF] uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
-                  type="button"
-                >
-                  Learn More
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="2"
-                    stroke="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    ></path>
-                  </svg>
-                </button>
-              </Link>
-            </div>
-          </div>
+
+          </Link>
         </div>
       ))}
     </div>

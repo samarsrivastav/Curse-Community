@@ -8,7 +8,7 @@ function Blog() {
 
     return (
         <div>
-            <div className="container my-[7%]">
+            <div className="container my-[7%] mx-auto">
                 {dataArray.map((listItem, index) => (
                     <BlogCard
                         key={index}
