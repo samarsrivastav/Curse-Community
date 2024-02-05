@@ -3,5 +3,158 @@
 @tailwind utilities;
 
 body{
-    background-color: #031a27;
+    background-color: #06344f;
 }
+
+/* animation for glowing borders  */
+
+
+.glowing{
+    position: relative;
+  color: #fff;
+  overflow: hidden;
+  border-top: 1px solid #040917;
+  border-right: 1px solid #06344f;
+  border-bottom: 1px solid #094f76  ;
+  border-left: 1px solid #0c699e;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+ .sp{
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      #27005D,
+      #332FD0 
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      #27005D,
+      #332FD0,
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      #27005D,
+      #332FD0 
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      #27005D,
+      #332FD0,
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 3s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 3s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 3s ease-in-out infinite;
+  }
+  
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+  
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }

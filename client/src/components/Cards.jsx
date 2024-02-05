@@ -39,12 +39,17 @@ const Cards = () => {
   // console.log(data.courses[category])
 
   return (
-    <div className="flex flex-wrap justify-evenly py-5">
-
+    <>
+    <div className="head text-center">
+        <h2 className='text-4xl w-full font-serif text-[#DFF6FF]'>Craft Your Coding Journey</h2>
+        <p className='text-md text-white opacity-50 font-sans'>Different Categories</p>
+      </div>
+    <div className="flex flex-wrap justify-evenly py-5  drop-shadow-[0px_25px_35px_currentColor] ">
+      
       {data.map((course, id) => (
         <div key={id}>
           <Link to={course.link}>
-            <div className="cursor-pointer group perspective relative flex flex-col my-10 bg-clip-border rounded-xl w-96 h-[350px]  border border-gray-100 bg-[#87c1e2]">
+            <div className="cursor-pointer group perspective relative flex flex-col my-10 bg-clip-border rounded-xl w-96 h-96  border border-gray-100 bg-[#87c1e2] glowing">
               <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
                 <div className="absolute backface-hidden w-full h-full">
                   <div className="p-6 text-center">
@@ -60,12 +65,17 @@ const Cards = () => {
                   </p>
                 </div>
               </div>
+              <span class="top sp"></span>
+              <span class="right sp"></span>
+              <span class="bottom sp"></span>
+              <span class="left sp"></span>
             </div>
 
           </Link>
         </div>
       ))}
     </div>
+    </>
   );
 };
 

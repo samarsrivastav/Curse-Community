@@ -4,7 +4,7 @@ import i2 from '../assets/images/icons/Icon-2.png'
 import i from '../assets/images/icons/Icon.png'
 function AddBanner() {
     return (
-        <div className='bg-[#031a27] py-4 my-4'>
+        <div className='bg-[#06344f] py-10'>
         <div className="head text-center">
           <h2 className='text-4xl w-full font-serif text-[#DFF6FF]'>All Your Resources In One Place</h2>
           <p className='text-md text-white opacity-50 font-sans'>Welcome to BitByte</p>
