@@ -6,6 +6,7 @@ import {BrowserRouter as Router , Routes, Route} from 'react-router-dom'
 import Blog from './pages/Blog'
 import Learning from './pages/Learning'
 import Courses from './pages/Courses'
+import JobDetail from './pages/JobDetail'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' Component={Home}/>
             <Route path='/blog' Component={Blog}/>
             <Route path='/learning' Component={Learning}/>
+            <Route path='/jobdetail/:jobid' Component={JobDetail}/>
             <Route path='/web' Component={Courses}/>
             <Route path='/dsa' Component={Courses}/>
             <Route path='/machine-learning' Component={Courses}/>
