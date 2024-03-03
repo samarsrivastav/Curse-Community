@@ -19,8 +19,8 @@ function AddBanner() {
       
           <div className="p1 w-full sm:w-80 mt-4 sm:mt-0">
             <img src={i2} alt="" className='mx-auto my-1' />
-            <p className='text-[26px] w-full font-serif text-center text-[#DFF6FF]'> Real-Life Stories</p>
-            <p className='text-[14px] text-white opacity-50 font-sans text-justify'>Learn from the experiences of individuals who overcame challenges in their learning journey. Dive into real-life stories that inspire and provide valuable insights.</p>
+            <p className='text-[26px] w-full font-serif text-center text-[#DFF6FF]'>Latest Opportunties</p>
+            <p className='text-[14px] text-white opacity-50 font-sans text-justify'>Discover the latest opportunities on our website! Stay updated with the newest job openings, internships, and career advancements. Your next big opportunity awaits! Explore now.</p>
           </div>
       
           <div className="p1 w-full sm:w-80 mt-4 sm:mt-0">

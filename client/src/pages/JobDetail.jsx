@@ -4,7 +4,6 @@ import { Link, useParams } from 'react-router-dom';
 function JobDetail() {
     const { jobid } = useParams();
     let result = jobid.slice(1);
-    console.log(job.jobs[result])
     var job_t = job.jobs[result];
     const about = Object.values(job_t.about);
     const min_qualification = Object.values(job_t.min_qualification);

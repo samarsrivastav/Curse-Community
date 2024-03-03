@@ -1,7 +1,5 @@
 import React from "react";
-import web from "../assets/images/learning/web.png";
 import android from "../assets/images/learning/android.jpg"
-import dsa from '../assets/images//learning/dsa.png'
 import { Link } from "react-router-dom";
 const Cards = () => {
   const data = [
@@ -9,7 +7,7 @@ const Cards = () => {
       Title: "Unlock Your Web Development Journey",
       Discription:
         "Are you ready to dive into the exciting world of web development? Click on this card to unlock a treasure trove of free, high-quality web development courses that will empower you to build, design, and innovate on the web.",
-      image: `${web}`,
+      image: "https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg?size=626&ext=jpg",
       link: "/web"
     },
     {
@@ -23,14 +21,14 @@ const Cards = () => {
       Title: "Explore the Boundless World of Machine Learning",
       Discription:
         "Step into the future of technology by clicking on this card. Uncover an array of free machine learning courses that will equip you with the skills to analyze data, create intelligent systems, and make a profound impact in the world of artificial intelligence.",
-      image: `${web}`,
+      image: "https://img.freepik.com/free-vector/cute-artificial-intelligence-robot-isometric-icon_1284-63045.jpg?w=826&t=st=1709458374~exp=1709458974~hmac=3f5550d370294fdc6d46293c066f3c226f99dc673afa7b1f72a59f544538b156",
       link: "/machine-learning"
     },
     {
       Title: "Master the Art of Problem-Solving",
       Discription:
         "Embark on a journey of logical prowess by clicking on this card. Explore a comprehensive collection of free courses on Data Structures and Algorithms (DSA) that will sharpen your problem-solving skills and empower you to tackle coding challenges with confidence.",
-      image: `${dsa}`,
+      image: "https://img.freepik.com/free-vector/d-render-primitive_173207-2191.jpg?w=826",
       link: "/dsa"
     },
   ];
@@ -65,10 +63,10 @@ const Cards = () => {
                   </p>
                 </div>
               </div>
-              <span class="top sp"></span>
-              <span class="right sp"></span>
-              <span class="bottom sp"></span>
-              <span class="left sp"></span>
+              <span className="top sp"></span>
+              <span className="right sp"></span>
+              <span className="bottom sp"></span>
+              <span className="left sp"></span>
             </div>
 
           </Link>

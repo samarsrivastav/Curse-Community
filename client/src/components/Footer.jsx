@@ -22,7 +22,7 @@ function FooterComponent() {
               className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
               <Link to='/learning'>
-                Learning
+                Courses
               </Link>
             </Typography>
           </li>
@@ -32,7 +32,7 @@ function FooterComponent() {
               className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
               <Link to='/blog'>
-                Blog
+                Jobs
               </Link>
             </Typography>
           </li>

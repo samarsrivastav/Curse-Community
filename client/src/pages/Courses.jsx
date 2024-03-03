@@ -16,7 +16,6 @@ const Courses = ({}) => {
   }else if(pathname==='/dsa'){
     coursesData="dsa"
   }
-  console.log(course.courses[coursesData])
   return (
     <div className='p-10 pt-36'>
         <div  className="mb-8 text-[#DFF6FF] ">
