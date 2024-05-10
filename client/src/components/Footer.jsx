@@ -31,7 +31,7 @@ function FooterComponent() {
               color="white"
               className="font-normal transition-colors hover:text-purple-500 focus:text-purple-500"
             >
-              <Link to='/blog'>
+              <Link to='/Job'>
                 Jobs
               </Link>
             </Typography>

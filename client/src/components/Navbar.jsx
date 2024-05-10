@@ -44,7 +44,7 @@ function StickyNavbar() {
         variant="small"
         className="p-1 font-normal"
       >
-        <Link to="/blog" className="flex items-center">
+        <Link to="/job" className="flex items-center">
           Jobs
         </Link>
       </Typography>
