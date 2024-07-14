@@ -60,7 +60,7 @@ function StickyNavbar() {
         <div className="flex items-center justify-between ">
           <Link to='/'>
           <Button
-                variant="black"
+                variant="filled"
                 size="sm"
                 className="hidden lg:inline-block"
                 

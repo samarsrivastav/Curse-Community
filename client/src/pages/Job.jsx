@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { BlogCard } from '../components/BlogCard';
 import data from '../assets/data/Job-summary.json';
 
 import { Button, IconButton } from "@material-tailwind/react";
-import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
+// import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
-function Blog() {
-    const dataArray = Object.values(data);
+function Job(props) {
+    const dataArray = props.jobs;
     const itemsPerPage = 5; // Number of items to display per page
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -32,10 +32,10 @@ function Blog() {
                 {paginatedData.map((listItem, index) => (
                     <BlogCard
                         key={index}
-                        img={listItem.img}
-                        url={listItem.url}
-                        desc={listItem.desc}
-                        title={listItem.title}
+                        img={listItem.logo}
+                        url={listItem._id}
+                        desc={listItem.about.p1}
+                        title={listItem.company}
                     />
                 ))}
             </div>
@@ -46,7 +46,7 @@ function Blog() {
                     onClick={goToPreviousPage}
                     disabled={currentPage === 1}
                 >
-                    <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" /> Previous
+                    ⬅️
                 </Button>
                 <div className="flex items-center gap-2">
                     <IconButton>{currentPage}</IconButton>
@@ -57,12 +57,11 @@ function Blog() {
                     onClick={goToNextPage}
                     disabled={endIndex >= dataArray.length}
                 >
-                    Next
-                    <ArrowRightIcon strokeWidth={2} className="h-4 w-4" />
+                    Next ➡️
                 </Button>
             </div>
         </div>
     );
 }
 
-export default Blog;
+export default Job;
